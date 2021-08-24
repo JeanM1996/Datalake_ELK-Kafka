@@ -1,0 +1,17 @@
+
+{
+  "index_patterns": [ "ptrx-domain-detection" ],
+  "version": 20190315,
+  "settings": {
+      "index.refresh_interval": "5s"
+   },
+   "mappings":{
+       "properties":{
+           "detection_date":{"type":"date"},
+           "domain":{"type":"keyword"},
+           "domain_name":{"type":"keyword"},
+           "tld":{"type":"keyword"},
+           "score":{"type":"double"}
+      }
+   }
+}
